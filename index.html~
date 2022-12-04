@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator Challenge</title>
+    <link href="index.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="calc-con">
+      <div id="calc-output">2 + 4 = 6(error)
+      </div>
+      <div id="calc-body">
+		<div class="calc-no calc-0">0</div>
+		<div class="calc-no calc-1">1</div>
+		<div class="calc-no calc-2">2</div>
+		<div class="calc-no calc-3">3</div>
+		<div class="calc-no calc-4">4</div>
+		<div class="calc-no calc-5">5</div>
+		<div class="calc-no calc-6">6</div>
+		<div class="calc-no calc-7">7</div>
+		<div class="calc-no calc-8">8</div>
+		<div class="calc-no calc-9">9</div>
+		<div class="calc-no calc-plus">+</div>
+		<div class="calc-no calc-min">-</div>
+		<div class="calc-no calc-mul">x</div>
+		<div class="calc-no calc-div">/</div>	
+		<div class="calc-no calc-eq">=</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    </body>
+</html>

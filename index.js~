@@ -1,0 +1,27 @@
+var buttons = document.getElementsByClassName("calc-no");
+var screen = document.querySelector("#calc-output");
+
+
+function outputCalc() {
+    screen.innerHTML = "000";
+}
+function resetCalc() {
+    screen.innerHTML = "";
+}
+
+
+for (let button of buttons) {
+    button.addEventListener("click", function() {
+	content = button.innerHTML;
+	if (content == "=") {
+	    alert("yes");
+	    outputCalc();
+	}
+	else if (content = "+" || content = "-" || content = "/") {
+	    screen.innerHTML = screen.innerHTML + " " + content;	    
+	}
+	else {
+	    screen.innerHTML = screen.innerHTML +       content;
+	}
+    })
+}

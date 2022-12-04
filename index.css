@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-X: hidden;
+
+    background-color: black;
+    color: white;
+    font-family: Archivo;
+    display: grid;
+    place-items: center;
+    border: 1px solid blue;
+    min-height: 100vh;
+}
+#calc-con {
+    width: 80%;
+    min-height: 70vh;
+
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+	"output"
+	 "body";
+    padding: 0.5em;
+    grid-gap: 10px;
+}
+#calc-output {
+    grid-area: output;
+    border: 1px solid grey;
+    width: 95%;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    font-weight: 900;
+    padding-bottom: 9px;
+    padding-right: 9px;
+}
+#calc-body {
+    grid-area: body;
+
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+	"n0 n1 n2 pl"
+	"n3 n4 n5 min"
+	"n6 n7 n8 mul"
+	"n9 eq eq div";
+        height: inherit;
+}
+.calc-0 {
+    grid-area: n0;
+}
+.calc-1 {
+    grid-area: n1;
+}
+.calc-2 {
+    grid-area: n2;
+}
+.calc-3 {
+    grid-area: n3;
+}
+.calc-4 {
+    grid-area: n4;
+}
+.calc-5 {
+    grid-area: n5;
+}
+.calc-6 {
+    grid-area: n6;
+}
+.calc-7 {
+    grid-area: n7;
+}
+.calc-8 {
+    grid-area: n8;
+}
+.calc-9 {
+    grid-area: n9;
+}
+.calc-plus {
+    grid-area: pl;
+}
+.calc-min {
+    grid-area: min;
+}
+.calc-mul {
+    grid-area: mul;
+}
+.calc-eq {
+    grid-area: eq;
+}
+#eq {
+    background-color: rgb(77, 238, 8);
+}
+#eq:hover {
+    background-color: rgba(77, 238, 8, 0.3);
+}
+#calc-body .calc-sign {
+    background-color: rgb(77, 238, 233);
+}
+#calc-body .calc-sign:hover {
+    background-color: rgba(77, 238, 233, 0.3);
+}
+.calc-div {
+    grid-area: div;
+}
+.calc-no {
+    padding: 0.6em;
+    background: white;
+    color: black;
+    display: grid;
+    place-items: center;
+    margin: 2px;
+    font-size: 1.4em;
+    font-weight: bold;
+    user-select: none;
+}
+.calc-no:hover {
+    background-color: rgba(150, 150, 150, 0.7);
+    cursor: pointer;
+}
+.calc-canc {
+    padding: 1.1em;
+    background-color: rgba(239, 20, 20, 1);
+    cursor: pointer;
+    user-select: none;
+}
+.calc-canc:hover {
+    background-color:  rgba(239, 44, 44, 0.5);
+}
+#calc-footer {
+    margin-top: -60px;
+}
+@media screen and (min-width: 933px) {
+    #calc-con {
+	width: 40vw;
+    }
+}
